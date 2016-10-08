@@ -1,8 +1,12 @@
-<form {{action '_registrarRestaurante' on="submit"}}>
+<h2>Registrar restaurante</h2>
+<form {{action 'registrarRestaurante' on="submit"}}>
   {{input type="nombre" value=nombre placeholder="Nombre"}}
   {{input type="direccion" value=direccion placeholder="Direccion"}}
   {{input type="telefono" value=telefono placeholder="Telefono"}}
   {{input type="tipo" value=tipo placeholder="Tipo"}}
   <button type="submit">Registrar Restaurante</button>
 </form>
+{{#link-to 'muestra-restaurante' class="button"}}
+  Mostrar restaurantes
+  {{/link-to}}
 {{outlet}}

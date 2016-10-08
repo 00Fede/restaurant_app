@@ -7,7 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('createClient');
+  this.route('create-client');
+  this.route('registrar-restaurante');
+  this.route('muestra-restaurante');
 });
 
 export default Router;
